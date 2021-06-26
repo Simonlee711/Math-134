@@ -1,4 +1,4 @@
-# Math-134
+# Math-134-Cryptography
 Building the different ciphers I am learning in Math 134 (Cryptography) at UCSC. 
 Also building simple algorithms learned in this class
 ```
