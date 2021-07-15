@@ -1,6 +1,8 @@
 """
 Module that will help find discrete logarithms of a number given certain criteria
 """
+__author__ = 'Simon Lee in Math 134, siaulee@ucsc.edu'
+
 import math
 
 def discrete_log(base, mod, solution):
