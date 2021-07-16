@@ -1,5 +1,7 @@
 """
 Module that will help find discrete logarithms of a number given certain criteria
+
+Used to solve problems like:    2^x = 13 mod 19  (where we wish to find x)
 """
 __author__ = 'Simon Lee in Math 134, siaulee@ucsc.edu'
 
