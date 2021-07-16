@@ -15,7 +15,7 @@ def encrypt(public_key, base, msg, k, prime):
 
     (c1,c2)[cipher text] = (base^k, publickey^k * msg) mod prime
 
-    k - random element generated between 50 and 10000000
+    k - random element generated between 50 and prime
     public key - base^a or base^b depending on the direction
     '''
     c1 = pow(base, k) % prime
@@ -53,7 +53,7 @@ if __name__ == '__main__':
         print("------------------------------")
         if direction == 'A':
             b_public_key = pow(base,b_private_key) % prime
-            rand_element = 877 #random.randint(50,prime)
+            rand_element = random.randint(50,prime)
             clue, mask = encrypt(b_public_key, base, message, rand_element, prime)
             d_msg = decrypt(clue, mask, prime, b_private_key)
             print ("Original Message:", message)
