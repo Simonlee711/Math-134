@@ -2,8 +2,7 @@
 Module that will help find primtive roots of a number given certain criteria
 
 Definition of Primitve Root:
-That is, the integer g is a primitive root (mod n) if for every number aa relatively prime to n there is an integer z such that a \equiv \big(g^z \pmod{n}\big).a≡(g 
-z (modn)).
+That is, the integer g is a primitive root (mod n) if for every number aa relatively prime to n there is an integer z such that a ≡ (g^z (mod n)).
 """
 __author__ = 'Simon Lee in Math 134, siaulee@ucsc.edu'
 
