@@ -1,5 +1,6 @@
 """
-Module that will help demonstarte the Elgamal Cryptosystem
+Module that will help demonstarte the Elgamal Cryptosystem.
+This iteration of ElGamal will take in a string of test of any size and encode and decode the message. 
 """
 __author__ = 'Simon Lee in Math 134, siaulee@ucsc.edu'
 
@@ -85,8 +86,11 @@ if __name__ == '__main__':
     '''
     
     # asks user for message
+    print("------------------------------")
     message = input("What's the message: ")
+    print("------------------------------")
     print("Original Message :", message)
+    print("------------------------------")
     
     #generates random key q and a second random key between 2 < x < q
     q = random.randint(pow(10, 20), pow(10, 50))
@@ -98,6 +102,9 @@ if __name__ == '__main__':
     print("g^a used : ", h)
   
     encrypted_msg, p = encrypt(message, q, h, g)
+    print("------------------------------")
+    print("Encrypted Message:", encrypted_msg)
+    print("------------------------------")
     decrypted_msg = decrypt(encrypted_msg, p, key, q)
     decrypted = ''.join(decrypted_msg)
     print("Decrypted Message :", decrypted);
