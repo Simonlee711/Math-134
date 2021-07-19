@@ -35,6 +35,7 @@ if __name__ == '__main__':
         print(str(answer), "=", str(signature) + "^" + str(e), "mod", n)
         print("The Document is VERIFIED\nDocument: ",document, "\nComputed Document (should match document): ", answer, "\nSignature: ", signature)
         print("------------------------------")
+    
     if choice == 'N':
         # enter public info
         print("------------------------------")
