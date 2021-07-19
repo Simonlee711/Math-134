@@ -33,7 +33,7 @@ if __name__ == '__main__':
         print("------------------------------")
         answer = pow(signature, e, n)
         print(str(answer), "=", str(signature) + "^" + str(e), "mod", n)
-        print("The Document is verified\nDocument: ",document, "\nComputed Document (should match document): ", answer, "\nSignature: ", signature)
+        print("The Document is VERIFIED\nDocument: ",document, "\nComputed Document (should match document): ", answer, "\nSignature: ", signature)
         print("------------------------------")
     if choice == 'N':
         # enter public info
@@ -51,10 +51,11 @@ if __name__ == '__main__':
         # document = signature^e mod n
         answer = pow(signature, e, n)
         print(str(answer), "=", str(signature) + "^" + str(e), "mod", n)
+        print("------------------------------")
         if int(answer) == int(document):
-            print("The Document is verified\nDocument: ",document, "\nComputed Document (should match document): ", answer, "\nSignature: ", signature)
+            print("The Document is VERIFIED\nDocument: ",document, "\nComputed Document (should match document): ", answer, "\nSignature: ", signature)
         else:
-            print("The Document is verified\nDocument: ",document, "\nComputed Document (should match document): ", answer, "\nSignature: ", signature)
+            print("The Document is UNVERIFIED\nDocument: ",document, "\nComputed Document (should match document): ", answer, "\nSignature: ", signature)
         print("------------------------------")
 
         
